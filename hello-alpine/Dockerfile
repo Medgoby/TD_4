@@ -6,5 +6,5 @@ ENV CONTAINER_USER='BARRY'
 
 #RUN echo $CONTAINER_USER > ./BARRY
 RUN unset CONTAINER_USER
-
-CMD ["hello-alpine, I’m Mohamed and this is a container from my first image"]
+RUN adduser -S Barry
+CMD echo hello-alpine, je suis Mohamed et c est mon premier container depuis ma première image alpine
