@@ -6,7 +6,10 @@ FROM alpine:3.15.0
 
 ##### Indiquer à notre contenaire une commande à effectuée
 
-CMD echo hello-alpine, je suis Mohamed et c est mon premier container depuis ma première image alpine
+#CMD echo hello-alpine, je suis Mohamed et c est mon premier container depuis ma première image alpine
+
+CMD echo "hello-alpine, I'm $CONTAINER_USER and this is a container for my first image”
+
 
 ## Construire l'image avec docker build
 
